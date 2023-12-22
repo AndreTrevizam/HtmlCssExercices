@@ -1,0 +1,181 @@
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #252525;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    z-index: 0;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  animation-name: fade;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.circle{
+  position: relative;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  clip-path: circle(115px at 115px 115px);
+  overflow: hidden;
+  background-color: skyblue;    
+  z-index: 1;
+  animation-name: day-night;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.sun{
+  position: relative;
+  z-index: 2;
+  background-color: #ffff00;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 auto;
+  transform-origin: 50% 400%;
+  left: -7px;
+  top: 8px;
+  animation-duration: 5s;
+  animation-name: sun-goes-down;
+  animation-iteration-count: infinite;
+}
+
+.land{
+  position: absolute;
+  background-color: greenyellow;
+  z-index: 1;
+  width: 100%;
+  height: 75px;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.pyramid-left{
+	position: absolute;
+	top: 99px;
+	left: 52px;
+	height: 57px;
+	width: 116px;
+	background: #F4F4F4;
+	clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
+  animation-name: left-pyramid-shadow;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+
+}
+
+.pyramid-right{
+	position: absolute;
+	top: 99px;
+	left: 110px;
+	height: 57px;
+	width: 58px;
+	background: #DDDADA;
+	clip-path: polygon(30% 100%, 100% 100%, 0% 0%);
+  animation-name: right-pyramid-shadow;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+.shadow{
+  position: absolute;
+  clip-path: polygon(300px 30%, 93px 0%, 30% 0%);
+  background: #333;
+  opacity: 0.3;
+  top: 155px;
+  height: 60px;
+  width: 700px;
+  left: -40px;
+  z-index: 1;
+  animation-name: shadow-on-the-floor;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes sun-goes-down{
+  0%{
+    transform: rotate(-70deg);
+  }
+
+  30%{
+    transform: rotate(-28deg);
+  }
+
+  100%{
+    transform: rotate(83deg);
+  }
+}
+
+@keyframes shadow-on-the-floor{
+  0%{
+    clip-path: polygon(300px 30%, 93px 0%, 30% 0%);
+  }
+
+  30%{
+    clip-path: polygon(210px 70%, 93px 0%, 30% 0%);
+  }
+
+  75%{
+    clip-path: polygon(50px 70%, 80px 0%, 30% 0%);
+  }
+
+  100%{
+    clip-path: polygon(20px 4%, 6px 0%, 30% 0%);
+  }
+}
+
+@keyframes left-pyramid-shadow{
+  0%{
+    background: #F4F4F4;
+  }
+
+  100%{
+    background: #DDDada9c;
+  }
+}
+
+@keyframes right-pyramid-shadow{
+  0%{
+    background: #dddada9c;
+  }
+
+  100%{
+    background: #F4F4F4;
+  }
+}
+
+@keyframes day-night{
+  0%{
+    background: skyblue;
+  }
+
+  34%{
+    background: skyblue;
+  }
+
+  100%{
+    background: #eb6c17;
+  }
+}
+
+
+
+
