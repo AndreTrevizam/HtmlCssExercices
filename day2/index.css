@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #fa0000;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+	background: #ffc918;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+input[type='checkbox']{
+	z-index: 2;
+	position: absolute;
+	left: 8px;
+	width: 100px;
+	height: 70px;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.icon{
+	position: relative;
+}
+
+span {
+	display: block;
+	width: 100px;
+	height: 10px;
+	margin: 10px;
+	border-radius: 5px;
+	background: white;
+	
+	box-shadow: 0 0 7px rgba(0,0,0,0.6);
+	
+	transition: translate 0.3s ease 0.4s, transform 0.3s ease;
+}
+
+input[type='checkbox']:checked + .icon #one{
+	translate: 0px 20px;
+	transform: rotate(45deg);
+	transition: translate 0.3s ease, transform 0.3s ease 0.4s;
+	
+}
+
+input[type='checkbox']:checked + .icon #two{
+	transform: scale(0, 0);
+	transition: transform 0.3s ease;
+}
+
+input[type='checkbox']:checked + .icon #three{
+	translate: 0px -20px;
+	transform: rotate(-45deg);
+	transition: translate 0.3s ease, transform 0.3s ease 0.4s;
+}
