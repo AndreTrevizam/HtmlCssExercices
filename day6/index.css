@@ -1,0 +1,227 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: brown;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    height: 300px;
+    width: 300px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 5px 5px 25px;
+}
+
+.likes {
+    position: absolute;
+    height: 99px;
+    width: 110px;
+    background-color: #fdc4c4;
+    left: 190px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.posts {
+    position: absolute;
+    height: 99px;
+    width: 110px;
+    background-color: #fdc4c4;
+    left: 190px;
+    cursor: pointer;
+    top: 100px;
+}
+
+.follows {
+    position: absolute;
+    height: 100px;
+    width: 110px;
+    background-color: #fdc4c4;
+    left: 190px;
+    cursor: pointer;
+    top: 200px;
+}
+
+.likes:hover {
+    opacity: 0.8;
+}
+
+.posts:hover {
+    opacity: 0.8;
+}
+
+.follows:hover {
+    opacity: 0.8;
+}
+
+.likes-title {
+    color: black;
+    font-weight: 700;
+    position: absolute;
+    left: 35px;
+    top: 30px;
+}
+
+.likes-value {
+    color: black;
+    font-weight: 100;
+    position: absolute;
+    font-size: small;
+    left: 28px;
+    top: 50px;
+}
+
+.posts-title {
+    color: black;
+    font-weight: 700;
+    position: absolute;
+    left: 35px;
+    top: 30px;
+}
+
+.posts-value {
+    color: black;
+    font-weight: 100;
+    position: absolute;
+    font-size: small;
+    left: 48px;
+    top: 50px;
+}
+
+.follows-title {
+    color: black;
+    font-weight: 700;
+    position: absolute;
+    left: 18px;
+    top: 30px;
+}
+
+.follows-value {
+    color: black;
+    font-weight: 100;
+    position: absolute;
+    font-size: small;
+    left: 41px;
+    top: 50px;
+}
+
+.profile {
+    position: absolute;
+    width: 190px;
+    height: 300px;
+}
+
+.profile-picture img {
+    position: absolute;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    left: 48px;
+    top: 25px;
+}
+
+.name{
+    font-weight: 600;
+    top: 140px;
+    position: absolute;
+    left: 35px;
+}
+
+.description{
+    position: absolute;
+    top: 160px;
+    left: 38px;
+    font-size: 11px;
+}
+
+.follow{
+    position: absolute;
+    top: 190px;
+    left: 45px;
+    text-decoration: none;
+    border: 2px solid;
+    color: black;
+    border-radius: 15px;
+    width: 110px;
+    height: 30px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.follow:hover{
+    background: #000;
+    color: #fff;
+}
+
+.circle-one {
+    position: absolute;
+    border: 1px solid;
+    border-color: brown transparent brown brown;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    left: 42px;
+    top: 19px;
+    transition: all 1.5s ease-in-out;
+}
+
+.circle-two {
+    position: absolute;
+    border: 1px solid;
+    border-color: brown brown brown transparent;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    left: 35px;
+    top: 11px;
+    transition: all 1.5s ease-in-out;
+}
+
+.circle-one:hover{
+    transform: rotate(360deg);
+}
+
+.circle-two:hover{
+    transform: rotate(-360deg);
+}
+
+.message{
+    position: absolute;
+    top: 230px;
+    left: 45px;
+    text-decoration: none;
+    border: 2px solid;
+    color: black;
+    border-radius: 15px;
+    width: 110px;
+    height: 30px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.message:hover{
+    background: #000;
+    color: #fff;
+}
